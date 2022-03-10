@@ -133,7 +133,24 @@
       <h2>Contacto</h2>
       <div class="input-container">
         <h3>Escribeme</h3>
+        <textarea
+          name="text"
+          id="user-text"
+          cols="30"
+          rows="10"
+          minlength="20"
+          maxlength="200"
+          required
+        ></textarea>
+        <form action="">
+          <label for="email">
+            <span>Email: </span>
+            <input type="email" name="correo" autocomplete="email" required />
+          </label>
+          <button type="submit">Contactar</button>
+        </form>
       </div>
+      <br />
       <a href="https://github.com/juand98"
         ><img
           width="30px"
