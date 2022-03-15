@@ -1,0 +1,16 @@
+.sidebar-container p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.8rem;
+}
+
+.projects-img {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.network-container {
+  max-width: none;
+  margin-right: 2rem;
+  padding-bottom: 1rem;
+}
