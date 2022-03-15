@@ -160,7 +160,7 @@ main .sidebar-container {
   font-size: 2.6rem;
   font-weight: bold;
   line-height: 3.2rem;
-  color: aqua;
+  color: #00ffff;
 }
 
 .sidebar-container p {
@@ -337,7 +337,7 @@ article .experience-container__text {
   margin: 0 auto;
   margin-bottom: 7rem;
   border-radius: 15px;
-  box-shadow: -13px 5px 77px 10px rgba(132, 40, 248, 1);
+  box-shadow: 0px -8px 49px 17px rgba(0, 255, 255, 1);
 }
 
 .info-container__table table {
@@ -353,7 +353,7 @@ article .experience-container__text {
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.9rem;
-  color: var(--bar-learn);
+  color: black;
   background: #faf8f7;
   /* box-shadow: -13px 5px 77px 10px rgba(132, 40, 248, 1); */
 }
@@ -378,7 +378,118 @@ article .experience-container__text {
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.7rem;
-  color: var(--bar-learn);
+  color: black;
 }
 
 /* Projects container */
+
+.projects-container {
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+}
+
+.projects-img {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-img .projects-img__cont {
+  margin-bottom: 2rem;
+}
+.projects-img img {
+  width: 20rem;
+  height: 20rem;
+  border: 0.1rem solid var(--backgruund-light);
+  border-radius: 1.5rem;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+  background: var(--backgruund-light);
+}
+
+footer h2 {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2.6rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.input-container {
+  width: 70%;
+  max-width: 560px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container h3 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.input-container textarea {
+  margin-bottom: 1rem;
+}
+
+.input-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form label {
+  margin-bottom: 1rem;
+}
+
+form label span {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--text-color);
+}
+form button {
+  width: 15rem;
+  height: 4.8rem;
+  background: #faf8f7;
+  border: 0.2rem solid var(--background-dark);
+  border-radius: 2rem;
+}
+
+form button:hover {
+  color: aqua;
+  background: var(--background-dark);
+}
+form button:active {
+  color: var(--bar-learn);
+}
+
+.network-container {
+  max-width: 320px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.network-container a {
+  margin-left: 1rem;
+}
