@@ -184,18 +184,7 @@ A cada contenedor se le debe dimersionar de forma responsive. Inicialmente desde
   justify-content: start;
 }
 
-.info-container .info-container__experience {
-  width: 80%;
-  height: 70rem;
-  min-width: 320px;
-  max-width: 560px;
-  margin: 0 auto;
-  padding: 3rem;
-  text-align: center;
-  border: 1px solid wheat;
-}
-
-.info-container__experience h2 {
+.info-container h2 {
   margin-bottom: 2rem;
   font-size: 2.6rem;
   font-weight: 800;
@@ -203,10 +192,131 @@ A cada contenedor se le debe dimersionar de forma responsive. Inicialmente desde
   color: var(--text-color);
 }
 
-.info-container__experience hr {
+.info-container hr {
   width: 100%;
   height: 1px;
   margin: 0 auto;
   margin-bottom: 4.3rem;
   background: var(--bar-learn-out);
+}
+
+.experience-container article {
+  width: 32rem;
+  height: auto;
+  min-width: 25rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 1px solid wheat; */
+}
+
+article .vertical-bar {
+  width: 8rem;
+  height: 24.6rem;
+  margin-top: 1rem;
+  background-image: url(./Assets/vertical-bar.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+article .experience-container__date {
+  width: 9.1rem;
+  height: 24.6rem;
+  padding: 0.2rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
+  color: var(--text-color);
+}
+
+article .experience-container__text {
+  width: 26.2rem;
+  height: 24.6rem;
+  padding: 1rem 0rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.experience-container__text p {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.experience-container__text #description {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  padding-right: 1rem;
+  color: var(--text-color);
+}
+
+/* Seccióm skills*/
+
+.skills-container {
+  width: 100%;
+  height: 64rem;
+  min-width: 320px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background: var(--backgruund-light);
+}
+
+.skills-container .skills-container__bar {
+  width: 30rem;
+  height: auto;
+  min-width: 320px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  padding: 2rem;
+  text-align: start;
+}
+
+.skills-container__bar p {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.skills-container__bar .outside-bar {
+  width: 27.2rem;
+  height: 0.6rem;
+  background: var(--text-color);
+}
+
+.outside-bar .inside-bar {
+  width: 70%;
+  height: 100%;
+  background: var(--bar-learn);
+}
+
+.outside-bar #css-bar {
+  width: 65%;
+  height: 100%;
+  background: var(--bar-learn);
+}
+
+.outside-bar #git-bar {
+  width: 80%;
+  height: 100%;
+  background: var(--bar-learn);
+}
+
+.outside-bar #js-bar {
+  width: 15%;
+  height: 100%;
+  background: var(--bar-learn);
+}
+
+.outside-bar #react-bar {
+  width: 3%;
+  height: 100%;
+  background: var(--bar-learn);
 }
