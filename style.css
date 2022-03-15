@@ -130,6 +130,13 @@ main {
   background: var(--background-dark);
 }
 
+main hr {
+  width: 100%;
+  height: 1px;
+  margin: 0 auto;
+  background: var(--bar-learn-out);
+}
+
 /*Contenedor side bar, about me */
 
 main .sidebar-container {
@@ -319,3 +326,59 @@ article .experience-container__text {
   height: 100%;
   background: var(--bar-learn);
 }
+
+/* Tabla */
+
+.interest-container .interest-container__table {
+  width: 90%;
+  height: auto;
+  min-width: 23rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+  border-radius: 15px;
+  box-shadow: -13px 5px 77px 10px rgba(132, 40, 248, 1);
+}
+
+.info-container__table table {
+  width: 100%;
+  height: 100%;
+}
+
+.interest-container__table td {
+  width: 50%;
+  height: 3rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.9rem;
+  color: var(--bar-learn);
+  background: #faf8f7;
+  /* box-shadow: -13px 5px 77px 10px rgba(132, 40, 248, 1); */
+}
+
+/* Esquinas tabla */
+
+.interest-container__table .table__top-left {
+  border-radius: 15px 0 0 0;
+}
+.interest-container__table .table__top-right {
+  border-radius: 0 15px 0 0;
+}
+.interest-container__table .table__bottom-left {
+  border-radius: 0 0 0 15px;
+}
+.interest-container__table .table__bottom-right {
+  border-radius: 0 0 15px 0;
+}
+
+.interest-container__table .table__right {
+  width: 50%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.7rem;
+  color: var(--bar-learn);
+}
+
+/* Projects container */
