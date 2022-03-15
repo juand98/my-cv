@@ -7,28 +7,46 @@
     <meta name="description" content="Cv-Juan Duarte" />
     <meta name="autor" content="Juan Camilo Duarte" />
     <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./tablet.css" media="(min-width:561px)" />
     <link rel="icon" type="image/png" sizes="32x32" href="./Assets/icono.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <title>Cv-Juan Duarte</title>
   </head>
   <body>
     <header>
-      <h1>Juan Camilo Duarte Tobón</h1>
-      <img
-        src="./Assets/img_perfil.jpg"
-        alt="Juan Duarte"
-        width="100px"
-        height="150px"
-      />
-      <hr />
+      <div class="header-tittle-container">
+        <h1>Juan Duarte</h1>
+        <img src="./Assets/img_perfil.jpg" alt="Juan Duarte" />
+      </div>
+      <div class="intro-container">
+        <h2>
+          Jr.Developer,
+          <h2 id="color-tittle">Ada School</h2>
+        </h2>
+        <p>
+          Junior frontend developer and geological engineer in training.
+          Passionate about technology and learning new things.
+        </p>
+      </div>
+      <div class="nav-container">
+        <a href="#about-me">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#interest">Interests</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
     </header>
     <main>
+      <hr id="about-me" />
       <aside class="sidebar-container">
-        <h2>Sobre mí</h2>
+        <h2>Hi, I'm Juan Camilo. Nice to meet you</h2>
         <p>
           Junior Developer. Soy una persona proactiva, eficiente y con gran
           capacidad de aprendizaje e investigación. Capaz de interpretar los
@@ -43,94 +61,138 @@
       </aside>
       <section class="info-container">
         <div class="experience-container">
-          <h2>Experiencia</h2>
-          <ul>
-            <li>Desarrollador frontend Jr - Globant</li>
-            <li>Desarrollador frontend senior - Lean Tech</li>
-            <li>Fullstack Developer - Lean Tech</li>
-            <li>Fullstack developer & project manager - Globant</li>
-          </ul>
+          <hr id="experience" />
+          <h2>Experience</h2>
+          <hr />
+          <article>
+            <div class="vertical-bar"></div>
+            <span class="experience-container__date">2021-Present</span>
+            <div class="experience-container__text">
+              <p>Junior Developer</p>
+              <p id="description">
+                Desde Junio del 2021 he cursado diferentes cursos de desarrollo
+                web y trabajando en proyectos freelance que incolucran
+                conocimientos básicos de diseño y de programación. Participé en
+                proyectos colaborativos en Lean Tech y Globant. Actualmente
+                estoy estudiando JavaScript y React.js con Ada School.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="vertical-bar"></div>
+            <span class="experience-container__date">2020-Present</span>
+            <div class="experience-container__text">
+              <p>Engineer and programmer</p>
+              <p id="description">
+                Monitor de ecuaciones diferenciales y diferentes materias de la
+                rama de la ingeniería aplicada en la Universidad Nacional de
+                Colombia. Desde finales del 2020 me interesó el mundo de la
+                programación y la tecnología, desde entonces empecé a aprender
+                todo lo relacionado con el desarrollo web.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="vertical-bar"></div>
+            <span class="experience-container__date">2016-Present</span>
+            <div class="experience-container__text">
+              <p>Geologist engineer</p>
+              <p id="description">
+                En 2016 ingresé a la Universidad Nacional de Colombia como
+                estudiante de Ingeniería Geológica, actualmente me encuentro en
+                octavo semestre de la carrera. Participé en diferentes grupos de
+                investigación como "Cementos y Materiales de Construcción" y
+                "Geoamenazas" de la Facultad de Minas.
+              </p>
+            </div>
+          </article>
         </div>
         <div class="skills-container">
+          <hr id="skills" />
           <h2>Skills</h2>
-          <p>
-            A lo largo de los últimos 6 meses me he dedicado a aprender
-            diferentes tecnologias, herramientas, meotdológias y lenguajes
-            proyectándome a ser desarrollador web forntend. Ente mis habilidades
-            principales actuales:
-          </p>
-          <table>
-            <tbody>
-              <tr>
-                <td>Lenguajes</td>
-                <td>Librerias</td>
-                <td>Controlador de versiones</td>
-                <td>Skills</td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>Tailwind CSS</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>Git</li>
-                    <li>Gitlab</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>Responsive Design</li>
-                    <li>Git/GitHub</li>
-                    <li>Mobile First</li>
-                    <li>BEM Metodology</li>
-                    <li>Best practices</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <hr />
+          <div class="skills-container__bar">
+            <p>HTML5</p>
+            <div class="outside-bar">
+              <div class="inside-bar"></div>
+            </div>
+          </div>
+          <div class="skills-container__bar">
+            <p>CSS3</p>
+            <div class="outside-bar">
+              <div id="css-bar" class="inside-bar"></div>
+            </div>
+          </div>
+          <div class="skills-container__bar">
+            <p>Git / Github</p>
+            <div class="outside-bar">
+              <div id="git-bar" class="inside-bar"></div>
+            </div>
+          </div>
+          <div class="skills-container__bar">
+            <p>JavaScript</p>
+            <div class="outside-bar">
+              <div id="js-bar" class="inside-bar"></div>
+            </div>
+          </div>
+          <div class="skills-container__bar">
+            <p>React.js</p>
+            <div class="outside-bar">
+              <div id="react-bar" class="inside-bar"></div>
+            </div>
+          </div>
         </div>
 
-        <div class="interests-container">
-          <h2>Intereses</h2>
-          <p>
-            Actualmente me encuentro fortaleceiendo y enfocando mi aprendizaje
-            en las tecnologías que se usan para el desarrollo front. Más
-            adelante espero aprender diferentes tecnologías de software y
-            enfocarme finalmente en ser fullstack developer. Mis intereses a
-            corto, mediano y largo plazo se muestran la tabla a continuación.
-          </p>
-          <table>
-            <tbody>
+        <div class="interest-container">
+          <hr id="interest" />
+          <h2>Interests</h2>
+          <hr />
+          <div class="interest-container__table">
+            <table>
               <tr>
-                <td>Corto plazo</td>
-                <td>Web Frontend Developer Jr</td>
+                <td class="table__top-left">Corto Plazo (Junio 2022)</td>
+                <td class="table__top-right table__right">Front Dev</td>
               </tr>
               <tr>
-                <td>Mediano plazo</td>
-                <td>Web Backend Developer</td>
+                <td>Mediano plazo (Diciembre 2022)</td>
+                <td class="table__right">Backend Dev</td>
               </tr>
               <tr>
-                <td>Largo plazo</td>
-                <td>Web Fullstack Developer</td>
+                <td class="table__bottom-left">Largo plazo (2023)</td>
+                <td class="table__bottom-right table__right">Fullstack Dev</td>
               </tr>
-            </tbody>
-          </table>
+            </table>
+          </div>
+        </div>
+        <div class="projects-container">
+          <hr id="projects" />
+          <h2>Projects</h2>
+          <hr />
+          <div class="projects-img">
+            <div class="projects-img__cont">
+              <a href="https://juand98.github.io/MobileFirst-/">
+                <img src="./Assets/bitcoin.svg" alt="Batatabit project" />
+              </a>
+            </div>
+            <div class="projects-img__cont">
+              <a href="https://juand98.github.io/FrontHTMLyCSS/">
+                <img src="./Assets/app-chat.jpg" alt="App chat project" />
+              </a>
+            </div>
+            <div class="projects-img__cont">
+              <a href="https://juand98.github.io/CarritoCompras/">
+                <img
+                  src="./Assets/carrito-compras.jpg"
+                  alt="Carrito de compras project"
+              /></a>
+            </div>
+          </div>
         </div>
       </section>
-      <hr />
     </main>
+    <hr />
     <footer>
-      <h2>Contacto</h2>
+      <h2 id="contact">Contact Me</h2>
       <div class="input-container">
         <h3>Escribeme</h3>
         <textarea
@@ -153,27 +215,28 @@
           <button type="submit">Contactar</button>
         </form>
       </div>
-      <br />
-      <a href="https://github.com/juand98"
-        ><img
-          width="30px"
-          height="30px"
-          src="./Assets/github-icon.svg"
-          alt="github-icon"
-      /></a>
-      <a href="https://www.instagram.com/camiloduarte98/"
-        ><img
-          src="./Assets/instagram-icon.svg"
-          alt="ig-icon"
-          width="30px"
-          height="30px"
-      /></a>
-      <a href="https://www.linkedin.com/in/juan-camilo-duarte-b512b8219/"
-        ><img
-          src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png"
-          width="30px"
-          height="30px"
-      /></a>
+      <div class="network-container">
+        <a href="https://github.com/juand98"
+          ><img
+            width="30px"
+            height="30px"
+            src="./Assets/github-icon.svg"
+            alt="github-icon"
+        /></a>
+        <a href="https://www.instagram.com/camiloduarte98/"
+          ><img
+            src="./Assets/instagram-icon.svg"
+            alt="ig-icon"
+            width="30px"
+            height="30px"
+        /></a>
+        <a href="https://www.linkedin.com/in/juan-camilo-duarte-b512b8219/"
+          ><img
+            src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png"
+            width="30px"
+            height="30px"
+        /></a>
+      </div>
     </footer>
   </body>
 </html>
