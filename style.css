@@ -279,7 +279,6 @@ article .experience-container__text {
   height: auto;
   min-width: 320px;
   margin: 0 auto;
-  margin-top: 1.5rem;
   padding: 2rem;
   text-align: start;
 }
@@ -291,40 +290,27 @@ article .experience-container__text {
   color: var(--text-color);
 }
 
-.skills-container__bar .outside-bar {
-  width: 27.2rem;
-  height: 0.6rem;
+.skills-container__bar .progress-bar-container {
+  width: 100%;
+  height: auto;
   background: var(--text-color);
+  border: 1px solid wheat;
 }
 
-.outside-bar .inside-bar {
-  width: 70%;
-  height: 100%;
-  background: var(--bar-learn);
+/*Barras de progreso */
+
+.progress-bar-container .progress-bar-container__bar {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-.outside-bar #css-bar {
-  width: 65%;
-  height: 100%;
-  background: var(--bar-learn);
+.progress-bar-container .progress-bar-container__bar::-webkit-progress-bar {
+  background-color: var(--text-color);
 }
 
-.outside-bar #git-bar {
-  width: 80%;
-  height: 100%;
-  background: var(--bar-learn);
-}
-
-.outside-bar #js-bar {
-  width: 15%;
-  height: 100%;
-  background: var(--bar-learn);
-}
-
-.outside-bar #react-bar {
-  width: 3%;
-  height: 100%;
-  background: var(--bar-learn);
+.progress-bar-container .progress-bar-container__bar::-webkit-progress-value {
+  background-color: var(--bar-learn);
 }
 
 /* Tabla */
@@ -337,7 +323,7 @@ article .experience-container__text {
   margin: 0 auto;
   margin-bottom: 7rem;
   border-radius: 15px;
-  box-shadow: 0px -8px 49px 17px rgba(0, 255, 255, 1);
+  box-shadow: 0px -8px 49px 17px var(--bar-learn);
 }
 
 .info-container__table table {
@@ -353,8 +339,8 @@ article .experience-container__text {
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.9rem;
-  color: black;
-  background: #faf8f7;
+  color: var(--text-color);
+  background: var(--backgruund-light);
   /* box-shadow: -13px 5px 77px 10px rgba(132, 40, 248, 1); */
 }
 
@@ -378,7 +364,7 @@ article .experience-container__text {
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.7rem;
-  color: black;
+  color: var(--text-color);
 }
 
 /* Projects container */
